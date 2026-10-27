@@ -77,6 +77,36 @@ curl -X POST localhost:8000/api/mappings/ -H "Authorization: Bearer <TOKEN>" \
 - Errors use a uniform `{"success": false, "errors": {...}}` shape.
 - Secrets/DB config come from environment variables (`.env`, git-ignored).
 
+## API Test Screenshots
+
+**Register (201)**
+
+![Register](screenshots/01-register.png)
+
+**Create patient (201)**
+
+![Create patient](screenshots/02-create-patient.png)
+
+**Create doctor (201)**
+
+![Create doctor](screenshots/03-create-doctor.png)
+
+**List patients (200)**
+
+![List patients](screenshots/04-list-patients.png)
+
+**Delete mapping (204)**
+
+![Delete mapping](screenshots/06-delete-mapping-204.png)
+
+**Delete patient (204)**
+
+![Delete patient](screenshots/07-delete-patient-204.png)
+
+**Delete doctor (204)**
+
+![Delete doctor](screenshots/08-delete-doctor-204.png)
+
 
 
 ## What I would improve next
